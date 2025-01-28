@@ -49,7 +49,7 @@ public class Words
 
 			//if the Word has "size" characters
 
-
+		//go through the arraylist before you loop
 		return vowelCount;
 	}
 
