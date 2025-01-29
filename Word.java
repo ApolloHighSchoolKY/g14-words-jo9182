@@ -12,7 +12,8 @@ public class Word
 
 	public Word()
 	{
-
+		//setWord(newWord);  is better, make sure to filter!
+		word = "";
 	}
 
 	public Word(String newWord)
@@ -21,7 +22,7 @@ public class Word
 	}
 
 	public void setWord(String newWord)
-	{
+	{	
 		word = newWord;
 	}
 
@@ -32,7 +33,7 @@ public class Word
 
 			//Use indexOf to see if the letter is in the string "vowels"
 		for(int i = 0; i < word.length(); i++){
-			if(VOWELS.contains(word.substring(i,i+1))){
+			if(VOWELS.contains(word.substring(i,i+1))){  //or if(VOWELS.indexOf(word.substring(i,i+1)))>-1
 				count++;
 			}
 		}
