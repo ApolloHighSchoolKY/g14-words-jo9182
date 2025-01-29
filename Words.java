@@ -28,7 +28,7 @@ public class Words
 			wordList.add(new Word(chopper.next()));
 		}
 			//Add objects of the type Word to our ArrayList "wordList"
-
+		chopper.close();
 
 	}
 
@@ -40,7 +40,7 @@ public class Words
 		for(Word i: wordList)
 			if(i.getLength()==size)
 				count++;
-			//if the length of the "theWord" is the same as the parameter "size"
+			//if the length of the "word" (i) is the same as the parameter "size"
 
 		return count;
 	}
@@ -67,7 +67,7 @@ public class Words
 	{
 		int count=0;
 
-		//for every Word in the ArrayList "words"
+		//for each Word in the ArrayList "words"
 		for(int i = 0; i<wordList.size(); i++)
 			if(wordList.get(i).getNumVowels() == numVowels)
 				count++;
@@ -79,6 +79,6 @@ public class Words
 
 	public String toString()
 	{
-	   return "";
+	   return "" + wordList;
 	}
 }
